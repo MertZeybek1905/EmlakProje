@@ -1,0 +1,46 @@
+﻿@model IEnumerable<İlanlar>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table">
+
+        <tr>
+            <th scope="col">Kira</th>
+            <th scope="col">Semt</th>
+            <th scope="col">Oda Sayı</th>
+            <th scope="col">Metre Kare</th>
+            <th scope="col">Ev Id</th>
+            <th scope="col">Ekleyen Id</th>
+        </tr>
+
+      
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Kira</td>
+                    <td>@item.Semt</td>
+                    <td>@item.OdaSayı</td>
+                    <td>@item.MetreKare</td>
+                    <td>@item.EvId</td>
+                    <td>@item.MetreKare</td>
+                </tr>
+            }
+        
+
+
+
+
+
+
+
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model KayıtBilgi
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    @*@foreach (var item in Model)
+        {
+            <hı>@item.CompanyName</hı>
+        }*@
+
+    <h1>Emlakcı Ekleme </h1>
+
+    <form asp-controller="Admin" asp-action="Add" method="post">
+
+        <div class="form-group">
+            <label for="isim">isim</label>
+            <input asp-for="UserName" class="form-control"  required/>
+        </div>
+
+        <div class="form-group">
+            <label for="Şirket Adı">Şirket Adı</label>
+            <input asp-for="CompanyName" class="form-control" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="Şifre">Şifre</label>
+            <input asp-for="Password" class="form-control" required />
+        </div>
+
+
+        <input type="submit" value="Submit" class="btn btn-primary" />
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
